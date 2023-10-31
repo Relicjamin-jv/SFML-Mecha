@@ -10,7 +10,7 @@ FetchContent_Declare(SFML
     GIT_TAG 2.6.x)
 FetchContent_MakeAvailable(SFML)
 
-add_executable(Mecha src/main.cpp)
+add_executable(Mecha src/window.cpp src/main.cpp src/game.cpp  header/game.h header/window.h)
 target_link_libraries(Mecha PRIVATE sfml-graphics)
 target_compile_features(Mecha PRIVATE cxx_std_17)
 
